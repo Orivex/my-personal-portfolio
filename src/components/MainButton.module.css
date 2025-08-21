@@ -1,0 +1,15 @@
+.mainButton {
+    background-color: rebeccapurple;
+    width: 250px;
+    height: 70px;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50px;
+    border-style:solid;
+    border-width: 3px;
+    border-color: cornflowerblue;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

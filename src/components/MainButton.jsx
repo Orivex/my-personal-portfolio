@@ -1,11 +1,11 @@
-import './MainButton.css'
 import { motion } from 'motion/react'
+import styles from './MainButton.module.css'
 
 function MainButton({label, onClick}) {
     return (
         <div>
             <motion.button
-            className="mainButton"
+            className={styles.mainButton}
             onClick={onClick}
             whileHover={{scale: 1.05}}
             whileTap={{scale: 1}}

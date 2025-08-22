@@ -27,9 +27,11 @@ function App() {
         <MainButton label={"Contact"} onClick={()=>onClickMainButton(3)}/>
       </div>
 
-      <div style={{}}>
+      <div>
 
+          {(selectedInfo == 0 || selectedInfo == 2) && (
 
+            
           <div>
             <motion.img src='./src/assets/photo.jpeg' 
               animate={{width: `${imgSize}%`}}
@@ -53,6 +55,7 @@ function App() {
             </motion.h1>
 
           </div>
+          )}
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             {selectedInfo == 1 && (
               <motion.div
@@ -76,7 +79,7 @@ function App() {
               <motion.div
                 initial={{scale: 0, opacity: 0}}
                 animate={{scale: 1, opacity: 1}}
-                transition={{duration: 1, type: "spring", stiffness: 75}}   
+                transition={{duration: 0.5, type: "tween"}}   
                 >
                 <Contact/>
               </motion.div>

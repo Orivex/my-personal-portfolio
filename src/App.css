@@ -32,6 +32,48 @@ html {
   top: 0;
 }
 
+.songPlayButton {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.changeSongButton {
+  position: absolute;
+  bottom: 100px;
+  left: 250px;
+  padding: 0;
+  border-radius: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicNote {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  padding: 0;
+  border-radius: 100%;
+  background: none;
+  background-color: rebeccapurple;
+  border-radius: 300px;
+}
+
+.songPlayButtonImage {
+  background-color: rebeccapurple;
+  border-radius: 300px;
+}
+
+button:focus { outline: none; }
 
 .logo {
   height: 6em;

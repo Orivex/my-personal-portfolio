@@ -5,12 +5,12 @@ function AboutMe() {
     return(
         <div className={styles.container}>
             <h3>Introduction</h3>
-            <p>Hey! My name is Abdlhamid Bilal, 19 years old, and I just finished high school in Germany.
-                I am a CS-enthusiast and love building projects like this.
+            <p>Hey! My name is Abdlhamid Bilal, I am 19 years old, and I just finished high school in Germany 🇩🇪.
+                I am a CS-enthusiast and love building projects like this ❤️.
             </p>
             <h3>University</h3>
             <p>
-                In Octobre 2025 I will start studying Computer Science at the RWTH in Aachen, Germany.
+                At Octobre 2025 I will start studying Computer Science 💻 at the RWTH in Aachen, Germany 👨‍🎓.
             </p>
             <h3>Hobbies</h3>
             <p>

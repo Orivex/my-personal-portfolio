@@ -8,7 +8,7 @@ function MainButton({label, onClick}) {
             className={styles.mainButton}
             onClick={onClick}
             whileHover={{scale: 1.05}}
-            whileTap={{scale: 1}}
+            whileTap={{scale: 0.9}}
             >
                 {label}
             </motion.button>

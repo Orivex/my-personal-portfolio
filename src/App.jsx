@@ -6,8 +6,8 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import TypeWriter from 'typewriter-effect'
 import Contact from './components/Contact';
-import clickSound from "./assets/sounds/click.mp3"
-const modules = import.meta.glob("./assets/sounds/songs/*.mp3", { eager: true });
+import clickSound from "/assets/sounds/click.mp3"
+const modules = import.meta.glob("/assets/sounds/songs/*.mp3", { eager: true });
 
 let songs = Object.values(modules).map(path => new Audio(path.default));
 let clickAudio = new Audio(clickSound);
@@ -84,7 +84,7 @@ function App() {
 
             
           <div>
-            <motion.img src='./src/assets/photo.jpeg' 
+            <motion.img src='/assets/photo.jpeg' 
               animate={{width: `${imgSize}%`}}
               transition={{duration: 0.3}}
               style={{borderRadius: '50%',
@@ -144,7 +144,7 @@ function App() {
       whileHover={{scale: 1.1}}
       whileTap={{scale: 0.9}}
       >
-        <img src={isMusic ? './src/assets/pause.png': './src/assets/play.png'} className='songPlayButtonImage'/>
+        <img src={isMusic ? '/assets/pause.png': '/assets/play.png'} className='songPlayButtonImage'/>
       </motion.button>
           
       {isMusic && (
@@ -154,14 +154,14 @@ function App() {
         whileHover={{scale: 1.1}}
         whileTap={{scale: 0.9, rotate: 270}}
         >
-          <img src={'./src/assets/change.png'} className='songPlayButtonImage'/>
+          <img src={'/assets/change.png'} className='songPlayButtonImage'/>
         </motion.button>
       )}
 
       <motion.img
         animate={isMusic ? {rotate: 360}: {rotate: 0}}
         transition={isMusic ? {duration: 5, repeat: Infinity, ease: 'linear'}: {}}
-      className='musicNote' src='./src/assets/music_note.png' />
+      className='musicNote' src='/assets/music_note.png' />
 
     </>
   )

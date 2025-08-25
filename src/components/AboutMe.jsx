@@ -27,7 +27,7 @@ function AboutMe() {
                       padding: 0, 
                       margin: 0,
                     }}>
-                <img style={{borderRadius: '50%', width: 25, height: 25}} src="./src/assets/github.png" alt="icon"/>
+                <img style={{borderRadius: '50%', width: 25, height: 25}} src="/assets/github.png" alt="icon"/>
             </button>
         </div>
     )

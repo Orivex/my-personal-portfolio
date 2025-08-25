@@ -6,11 +6,24 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import TypeWriter from 'typewriter-effect'
 import Contact from './components/Contact';
-import clickSound from "/assets/sounds/click.mp3"
-const modules = import.meta.glob("/assets/sounds/songs/*.mp3", { eager: true });
 
-let songs = Object.values(modules).map(path => new Audio(path.default));
-let clickAudio = new Audio(clickSound);
+const songPaths = [
+  "/assets/sounds/songs/song1.mp3",
+  "/assets/sounds/songs/song2.mp3",
+  "/assets/sounds/songs/song3.mp3",
+  "/assets/sounds/songs/song4.mp3",
+  "/assets/sounds/songs/song5.mp3",
+  "/assets/sounds/songs/song6.mp3",
+  "/assets/sounds/songs/song7.mp3",
+  "/assets/sounds/songs/song8.mp3",
+  "/assets/sounds/songs/song9.mp3",
+  "/assets/sounds/songs/song10.mp3",
+  "/assets/sounds/songs/song11.mp3",
+  "/assets/sounds/songs/song12.mp3",
+  "/assets/sounds/songs/song13.mp3",
+];
+
+let clickAudio = new Audio("/assets/sounds/click.mp3");
 let songAudio = new Audio();
 
 let currentSong = -1;
@@ -51,9 +64,9 @@ function App() {
   const changeMusic = () => {
     songAudio.pause();
     songAudio.currentTime = 0;
-    let r = Math.floor(Math.random() * songs.length);
+    let r = Math.floor(Math.random() * songPaths.length);
     if(r == currentSong) {
-      if(r == songs.length-1) {
+      if(r == songPaths.length-1) {
         r = r - 1;
       }
       else {
@@ -62,7 +75,7 @@ function App() {
     }
 
     currentSong = r;
-    songAudio = songs[currentSong];
+    songAudio.src = songPaths[currentSong];
     songAudio.volume = 0.1;
     songAudio.loop = true;
     songAudio.play();

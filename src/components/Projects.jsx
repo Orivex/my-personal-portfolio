@@ -22,20 +22,6 @@ function Projects() {
     }, [projName]);
 
     const projectsData = {
-        "Hype": {
-            link: "https://github.com/abdlhamid-bilal/Hype",
-            imgPath: "/assets/hype.png",
-            description: "Post polls and the hype.",
-            purpose: "I wanted to make a real-world full-stack application. Backend, frontend and database.",
-            tech: ["React", "Android", "Firebase", "Expo"]
-        },
-        "AmbitiousStudent": {
-            link: "https://ambitious-student.com",
-            imgPath: "/assets/ambitiousstudent.png",
-            description: "View top internships and upcoming hackathons before everyone else",
-            purpose: "It is very efficient to have everything at one place and to get notified when new oppurtunites occur",
-            tech: ["n8n", "Antigravity", "PostgreSQL"]
-        },
         "ExamAI": {
             link: "https://exam-ai-2026.base44.app/",
             imgPath: "/assets/ExamAI.png",
@@ -204,19 +190,16 @@ function Projects() {
                 <h3>Websites</h3>
                 <div className={styles.projectsContainer}>
                     {buttonComponent("GraphFun")}
-                    {buttonComponent("AmbitiousStudent")}
                     {buttonComponent("ExamAI")}
                 </div>
 
                 <h3>Mobile apps</h3>
                 <div className={styles.projectsContainer} >
-                    {buttonComponent("Hype")}
                     {buttonComponent("Quotator")}
                 </div>
 
                 <h3>Summer of Making 2025</h3>
                 <div className={styles.projectsContainer} >
-                    {buttonComponent("Hype")}
                     {buttonComponent("TextCompleter")}
                     {buttonComponent("my-personal-portfolio")}
                 </div>

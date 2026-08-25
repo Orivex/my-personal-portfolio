@@ -21,6 +21,11 @@ function Competitions() {
     }, [compName]);
 
     const competitionsData = {
+        "Game AI Hackathon": {
+            description: "A five-hour hackathon hosted by the AI Club Aachen. The challenge was to develop an optimized algorithmic bot capable of competing against other bots in the game of Hex.",
+            ranking: "No win. Much fun!",
+            link: null
+        },
         "Itestra Hackathon": {
             description: "Developed an intelligent algorithm to control a snake in automated battles against rival teams. Over the course of a 24-hour hackathon, continuously iterated on the strategy and logic, adapting the code to the results of live tournament rounds that took place every two hours.",
             ranking: "3rd place",
@@ -133,18 +138,19 @@ function Competitions() {
         <>
             <div className={styles.container}>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>Competitions and Hackathons</h2>
-                
+
                 <div className={styles.timeline}>
                     <div className={styles.timelineItem}>
                         <div className={styles.timelineYear}>2026</div>
                         <div className={styles.timelineContent}>
+                            {buttonComponent("Game AI Hackathon")}
                             {buttonComponent("Itestra Hackathon")}
                             {buttonComponent("GetaBot Trading Bot Competition")}
                             {buttonComponent("AI Coding Hackathon Cologne")}
                             {buttonComponent("HackHPI")}
                         </div>
                     </div>
-                    
+
                     <div className={styles.timelineItem}>
                         <div className={styles.timelineYear}>2025</div>
                         <div className={styles.timelineContent}>

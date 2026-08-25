@@ -9,8 +9,8 @@ function AboutMe() {
             </p>
             <h3>University</h3>
             <p>
-                I am now in my second semester. <br/> Besides my normal coursework,
-                I am a member of the <a href="https://data-science-club.de/" target="_blank"> Aachen Data Science Club </a>
+                I am now in my third semester. <br /> Besides my normal coursework,
+                I am the Tech Lead of the <a href="https://data-science-club.de/" target="_blank"> Aachen Data Science Club </a>
             </p>
             <h3>Interests</h3>
             <p>

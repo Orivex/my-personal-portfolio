@@ -21,12 +21,12 @@ function ScientificWork() {
 
     const worksData = {
         "Wavelets and Multiresolution Processing": {
-            link: "https://github.com/abdlhamid-bilal/Wavelets-and-Multiresolution-Processing",
+            link: "https://github.com/abdlhamid-bilal/Wavelets-and-Multiresolution-Processing/blob/master/Wavelets%20and%20Multiresolution%20Processing.pdf",
             title: "Wavelets and Multiresolution Processing",
             institution: "RWTH Aachen University",
             advisor: "Dr. Karim Knaebel",
             contributors: "Abdlhamid Bilal, Berk Can Ucar",
-            description: "-- Link to paper coming soon --"
+            description: "This report explores multiresolution image processing, transitioning from traditional image pyramids to the mathematical foundations of wavelet theory, specifically focusing on scaling and wavelet functions. It emphasizes the core mechanics of the Discrete and Fast Wavelet Transforms (DWT and FWT), detailing how these algorithms achieve highly efficient, non-redundant 1-D and 2-D signal decomposition for practical applications."
         }
     };
 
